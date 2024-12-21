@@ -10,5 +10,6 @@ end
 u0 = @SVector[2/3, 2/3, 2/3, 0, -1, 1]
 prob = NonlinearProblem((u, p) -> f(u), u0)
 sol = solve(prob)
-println("w: ", sol.u[begin:3], "x: ", sol.u[4:end])
+println("w: ", sol.u[begin:3])
+println("x: ", sol.u[4:end])
 

@@ -5,6 +5,9 @@
 ### 5.23 (10pts)
 
 Need to correctly implement Newton's method. (See `5_23.jl`.)
+
+Solution: $(0.877965760274447, 0.6767569705180311, 1.3308554116211024)$.
+
 Superlinear convergence:
 ![5.23](5_23_convergence.png)
 
@@ -29,10 +32,18 @@ For example, $x_1 = 0$, $(x_2, x_3) = (\pm x, \mp x)$.
 
 See `5_24_extra.jl` for a reference.
 
+```shell
+w: [0.8888888888890178, 0.5555555555554912, 0.5555555555554912]
+x: [1.3195414406293998e-17, -0.7745966692415411, 0.7745966692415411]
+```
 
 ## 3. (15pts) Ch 5. Computer problems. 5.27(a), (b), (e)
 
 See `5_27.jl` for a reference.
+
+Here, presenting the results is not important.
+The important thing is to investigate potential problems and try to explain why they occur.
+No points will be given for the mere presentation of the results.
 
 ### (a) (5pts)
 

@@ -71,7 +71,7 @@ function find_eigs(secular, d)
     λ = []
     for i in eachindex(d)
         uspan = (d[i], d[i]+1)
-        prob = IntervalNonlinearProblem((u, p) -> secular(u), uspan)
+        prob = NonlinearProblem((u, p) -> secular(u), uspan)
         sol = solve(prob, NewtonRaphson(), show_trace = Val(false), trace_level = TraceAll(1))
         push!(λ, sol.u)
     end
